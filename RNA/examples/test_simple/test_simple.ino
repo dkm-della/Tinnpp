@@ -1,7 +1,5 @@
 #include <rna_v1.h>
 
-using namespace std;
-
 RNA RNA1(2, 5, 1);
 
 void setup()

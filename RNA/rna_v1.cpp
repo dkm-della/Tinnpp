@@ -36,31 +36,28 @@ float RNA::train(const float* const in, const float* const tg, float rate)
     return RNA::toterr(tg, o, nops);
 }
 
-
-// // Prints an array of floats. Useful for printing predictions.
-// void RNA::print(const float* arr, const int size)
-// {
-//     for(int i = 0; i < size; i++)
-//         printf("%f ", (double) arr[i]);
-//     printf("\n");
-// }
-
 // Prints Created Network parameters.
 void RNA::printNetwork()
 {
-	// cout << "Nbr entrees : " << nips << endl;
-	// cout << "Nbr sorties : " << nops << endl;
-	// cout << "Nbr cachees : " << nhid << endl;
-	// cout << "Nbr biais   : " << nb << endl;
-	// cout << "Nbr poids   : " << nw << endl;
-	// cout << "Poids du reseau   : " << endl;
-	// for(int i = 0; i < nw; i++)
-	// 	cout << w[i] << " , ";
-	// cout << endl;
-	// cout << "Biais du reseau   : " << endl;
-	// for(int i = 0; i < nb; i++) 
-	// 	cout << b[i] << " , ";
-	// cout << endl;
+	Serial.print( "Nbr entrees : " );Serial.println(nips);
+	Serial.print( "Nbr sorties : " );Serial.println(nops);
+	Serial.print( "Nbr cachees : " );Serial.println(nhid);
+	Serial.print( "Nbr biais   : " );Serial.println(nb);
+	Serial.print( "Nbr poids   : " );Serial.println(nw);
+	Serial.println( "Poids du reseau   : ");
+	for(int i = 0; i < nw; i++)
+	{
+		Serial.print(w[i],5); 
+		Serial.print(" , ");
+	}
+	Serial.println();
+
+	Serial.println("Biais du reseau   : ");
+	for(int i = 0; i < nb; i++) 
+	{
+		Serial.print(b[i],5); 
+		Serial.print(" , ");
+	}
 }
 
 // Computes error.
