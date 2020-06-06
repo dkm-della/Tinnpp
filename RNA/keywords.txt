@@ -1,0 +1,18 @@
+#######################################
+# Syntax Coloring Map For PID Library
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+RNA	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+predict	KEYWORD2
+train	KEYWORD2
+printNetwork	KEYWORD2
+

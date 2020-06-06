@@ -1,0 +1,19 @@
+{
+  "name": "RNA",
+  "keywords": "Neural Network, controller, signal",
+  "description": "A Simple port of Tinn Neural Network C Library.",
+  "url": "",
+  "include": "rna_v1",
+  "authors":
+  [
+    {
+      "name": "Della Krachai Mohamed"
+    }
+  ],
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/dkm/Arduino-RNA-Library.git"
+  },
+  "frameworks": "arduino"
+}
